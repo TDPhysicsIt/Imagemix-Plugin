@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<title>Image-Mix</title>
+<meta charset="utf-8">
+<meta name="author" content="Thomas Dittmar">
+
+<link rel="stylesheet" href="eq.css" type="text/css">
+<link rel="icon" href="Symbole/plist2.png">
+<link rel="stylesheet" href="css/imgmix.css" type="text/css">
+<script src="js/jq2.js"></script>
+<script src="js/filesaver.js"></script>
+<script src="js/imgmix.js"></script>
+<style>
+  #imgcontainter {
+    width: 1820px;
+    height: 800px;
+    text-align: center;
+    background: #151515;
+  }
+</style>
+</head>
+<body style='background:#303030; font-family:arial; color:white;'>
+<div id="imgcontainter">
+  </div>
+
+
+<script>
+$(document).ready(function() {
+ function setScreen() {
+   if (window.screen.availWidth < 1600) {
+     $("#imgcontainter").css({"width":"1350px", "height":"550px"});
+   }
+ }
+  
+  setScreen();
+  
+  var imgoptions = {
+    "path": "file:///C:/Users/sonvt/OneDrive/Bilder/",
+    "image": ["djset.jpg", "videomix.jpg"],
+    "imagelistBackground": "#303030",
+    "imageCanvas": "#202020",
+    "galleryCols": 6
+  };
+  
+  $("#imgcontainter").imageMix(imgoptions);
+});
+</script>
+</body>
+</html>

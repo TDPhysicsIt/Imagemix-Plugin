@@ -1,0 +1,645 @@
+body {
+  font-family: arial;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 20px;
+  border-radius: 12px;
+  border: 2px outset grey;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #bbbbbb; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border: 6px outset grey;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 12px; /* Set a specific slider handle width */
+  height: 12px; /* Slider handle height */
+  background: #bbbbbb; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+  border: 6px outset grey;
+}
+
+#file {
+  display: none;
+}
+
+.toolbuttons {
+  width: 50px;
+  height: 35px;
+  background: #00002a;
+  border: 4px outset #00002a;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.toolbuttons2 {
+  width: 45px;
+  height: 35px;
+  background: #002a00;
+  border: 4px outset #002a00;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons3 {
+  width: 45px;
+  height: 35px;
+  background: #2a0000;
+  border: 4px outset #2a0000;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons4 {
+  width: 45px;
+  height: 35px;
+  background: #2a2a00;
+  border: 4px outset #2a2a00;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons5 {
+  width: 220px;
+  height: 50px;
+  background: #002a00;
+  border: 4px outset #002a00;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons6 {
+  width: 220px;
+  height: 45px;
+  background: #2a0000;
+  border: 4px outset #2a0000;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons7 {
+  width: 70px;
+  height: 35px;
+  background: #2a2a00;
+  border: 4px outset #2a2a00;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons8 {
+  width: 70px;
+  height: 35px;
+  background: #00002a;
+  border: 4px outset #00002a;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons9 {
+  width: 220px;
+  height: 50px;
+  background: #290000;
+  border: 4px outset #290000;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.toolbuttons10 {
+  width: 220px;
+  height: 50px;
+  background: #292900;
+  border: 4px outset #292900;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.toolbuttons11 {
+  width: 220px;
+  height: 50px;
+  background: #000029;
+  border: 4px outset #000029;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.toolbuttons12 {
+  width: 120px;
+  height: 50px;
+  background: #292900;
+  border: 4px outset #000029;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.toolbuttons13 {
+  width: 220px;
+  height: 50px;
+  background: #000029;
+  border: 4px outset #000029;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.toolbuttons14 {
+  width: 90px;
+  height: 35px;
+  background: #292900;
+  border: 4px outset #292900;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons15 {
+  width: 150px;
+  height: 50px;
+  background: #002a00;
+  border: 4px outset #002a00;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.toolbuttons16 {
+  width: 70px;
+  height: 50px;
+  background: #290029;
+  border: 4px outset #290029;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.toolbuttons17 {
+  width: 120px;
+  height: 50px;
+  background: #002a00;
+  border: 4px outset silver;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons18 {
+  width: 180px;
+  height: 50px;
+  background: #2a0000;
+  border: 4px outset #2a0000;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons19 {
+  width: 120px;
+  height: 30px;
+  background: #290000;
+  border: 4px outset #290000;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons20 {
+  width: 220px;
+  height: 40px;
+  background: #292900;
+  border: 4px outset #292900;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.toolbuttons21 {
+  width: 120px;
+  height: 50px;
+  background: #002900;
+  border: 4px outset #002900;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.toolbuttons22 {
+  width: 200px;
+  height: 40px;
+  background: #002900;
+  border: 4px outset #002900;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.toolbuttons23 {
+  width: 200px;
+  height: 40px;
+  background: #00002a;
+  border: 4px outset #00002a;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+
+.timerBox {
+  width: 60%;
+  height: 20px;
+  background: #24282a;
+  margin-left: 16px;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+}
+
+.time1 {
+  width: 80%;
+  height: 20px;
+  background: #24282a;
+  cursor: pointer;
+  text-align: left;
+}
+
+.time2 {
+  width: 20%;
+  height: 20px;
+  background: #151515;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding-top: 2px;
+}
+
+.progtime {
+  width: 100%;
+  height: 6px;
+  background: lime;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.fullScreen {
+  position: fixed;
+  z-index: 90;
+  left: 0;
+  top: 0;
+}
+
+.vidfullScreen1 {
+  position: fixed;
+  z-index: 90;
+  left: 0;
+  top: 0;
+}
+
+.vidfullScreen2 {
+  position: fixed;
+  z-index: 90;
+  left: 0;
+  top: 0;
+}
+
+.imgfullScreen1 {
+  position: fixed;
+  z-index: 1250;
+  left: 0;
+  top: 0;
+}
+
+.imgfullScreen2 {
+  position: fixed;
+  z-index: 1250;
+  left: 0;
+  top: 0;
+}
+
+.closeBtn {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  float: right;
+  background: #151515;
+  border-radius: 6px;
+}
+
+.selTrack {
+  outline: 4px solid lime;
+}
+
+.selFx {
+  outline: 4px solid red;
+}
+
+.vidselTrack {
+  outline: 4px solid lime;
+}
+
+.vidselFx {
+  outline: 4px solid red;
+}
+
+.imgselTrack {
+  outline: 4px solid lime;
+}
+
+.selcover {
+  outline: 4px solid yellow;
+}
+
+.selcover2 {
+  outline: 4px solid red;
+}
+
+@media screen and (max-width: 1600px) {
+  .toolbuttons {
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-left: 6px;
+	}
+  
+  .toolbuttons2 {
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-left: 6px;
+	}
+  
+  .toolbuttons3 {
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-left: 6px;
+	}
+  
+  .toolbuttons4 {
+  width: 40px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons5 {
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons6 {
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons7 {
+  width: 50px;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons8 {
+  width: 50px;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons9 {
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons10 {
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons11 {
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+
+	.toolbuttons12 {
+  	width: 80px;
+  	height: 35px;
+  	font-size: 14px;
+  	border-radius: 6px;
+  	margin-left: 6px;
+	}
+  
+    .toolbuttons13 {
+    width: 160px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-left: 6px;
+	}
+  
+    .toolbuttons14 {
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-left: 6px;
+	}
+  
+  .toolbuttons15 {
+  width: 100px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 4px;
+	}
+  
+  .toolbuttons16 {
+  width: 50px;
+  height: 35px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-left: 4px;
+	}
+  
+  .toolbuttons17 {
+  width: 80px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons18 {
+  width: 120px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons19 {
+  width: 100px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons20 {
+  width: 180px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons21 {
+  width: 80px;
+  height: 35px;
+  font-size: 10px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons22 {
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+  
+  .toolbuttons23 {
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 6px;
+	}
+
+.time1 {
+  width: 70%;
+	}
+
+.time2 {
+  width: 30%;
+	}
+}
